@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<p>A new sales order exceeds the approval limit and is
+  <strong style="color:{{ theme.warning }};">waiting for your approval</strong>.
+  Stock for this order is reserved until it is approved or rejected.</p>
+{% endblock %}

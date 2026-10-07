@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Your order has been <strong style="color:{{ theme.danger }};">rejected</strong> by {{ decision.actor.name }}.
+  The reserved stock has been released.</p>
+<p><em>Reason:</em> {{ decision.comment }}</p>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Your order has been <strong style="color:{{ theme.success }};">approved</strong> by {{ decision.actor.name }}
+  and is now completed. Inventory has been updated.</p>
+{% if decision.comment %}<p><em>Comment:</em> {{ decision.comment }}</p>{% endif %}
+{% endblock %}
